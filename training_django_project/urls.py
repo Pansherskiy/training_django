@@ -21,6 +21,7 @@ from training_django_project import views
 
 urlpatterns = [
     path('', views.index),
+    path('about/', views.about),
     path('articles/', include('training_django_project.article.urls')),
     path('admin/', admin.site.urls),
 ]
